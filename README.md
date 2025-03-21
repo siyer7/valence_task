@@ -1,2 +1,2 @@
 # valence_task
-Investigating sensory-valence decision making, and valence-space modulation
+Investigating valence asymmetries in sensory classification 
