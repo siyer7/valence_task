@@ -518,8 +518,8 @@
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
         <Param val="correct, outcome = .0, .0" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="[correct, outcome] = [0.0, 0.0];&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
-        <Param val="var _pj;&amp;#10;function _pj_snippets(container) {&amp;#10;    function in_es6(left, right) {&amp;#10;        if (((right instanceof Array) || ((typeof right) === &quot;string&quot;))) {&amp;#10;            return (right.indexOf(left) &gt; (- 1));&amp;#10;        } else {&amp;#10;            if (((right instanceof Map) || (right instanceof Set) || (right instanceof WeakMap) || (right instanceof WeakSet))) {&amp;#10;                return right.has(left);&amp;#10;            } else {&amp;#10;                return (left in right);&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;    container[&quot;in_es6&quot;] = in_es6;&amp;#10;    return container;&amp;#10;}&amp;#10;_pj = {};&amp;#10;_pj_snippets(_pj);&amp;#10;if (_pj.in_es6(expInfo[&quot;sess_type&quot;], [&quot;A&quot;, &quot;C&quot;])) {&amp;#10;    valence = subj_C0F1_val;&amp;#10;} else {&amp;#10;    if (_pj.in_es6(expInfo[&quot;sess_type&quot;], [&quot;B&quot;, &quot;D&quot;])) {&amp;#10;        valence = subj_C1F0_val;&amp;#10;    }&amp;#10;}&amp;#10;no_resp_txt = &quot;&quot;;&amp;#10;[coinLR, coinM, crossLR, crossM] = [0, 0, 0, 0];&amp;#10;[correct, outcome] = [0, 0];&amp;#10;if (((marker_moved &amp;&amp; (! (submit_resp.keys === null))) &amp;&amp; _pj.in_es6(&quot;up&quot;, submit_resp.keys))) {&amp;#10;    if ((((marker.markerPos &gt;= div_pos) &amp;&amp; (target_pos &gt;= div_pos)) || ((marker.markerPos &lt;= div_pos) &amp;&amp; (target_pos &lt;= div_pos)))) {&amp;#10;        correct = 1;&amp;#10;        outcome = ((valence === &quot;rew&quot;) ? 2 : 1);&amp;#10;        if ((outcome === 2)) {&amp;#10;            coinLR = 1;&amp;#10;        } else {&amp;#10;            if ((outcome === 1)) {&amp;#10;                coinM = 1;&amp;#10;            }&amp;#10;        }&amp;#10;    } else {&amp;#10;        correct = 0;&amp;#10;        outcome = ((valence === &quot;rew&quot;) ? (- 1) : (- 2));&amp;#10;        if ((outcome === (- 2))) {&amp;#10;            [coinLR, crossLR] = [1, 1];&amp;#10;        } else {&amp;#10;            if ((outcome === (- 1))) {&amp;#10;                [coinM, crossM] = [1, 1];&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;} else {&amp;#10;    if ((! marker_moved)) {&amp;#10;        no_resp_txt = &quot;You must move the marker!&quot;;&amp;#10;    } else {&amp;#10;        no_resp_txt = &quot;Respond faster!&quot;;&amp;#10;    }&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="# C0F1 = Curve penalty, Flat reward&amp;#10;if expInfo['sess_type'] in ['A','C']:&amp;#10;    valence = subj_C0F1_val&amp;#10;elif expInfo['sess_type'] in ['B','D']:&amp;#10;    valence = subj_C1F0_val&amp;#10;&amp;#10;no_resp_txt = ''&amp;#10;coinLR, coinM, crossLR, crossM = 0, 0, 0, 0&amp;#10;correct, outcome = 0, 0&amp;#10;&amp;#10;if marker_moved and not submit_resp.keys == None and 'up' in submit_resp.keys:&amp;#10;    &amp;#10;    if (marker.markerPos &gt;= div_pos and target_pos &gt;= div_pos)\&amp;#10;    or (marker.markerPos &lt;= div_pos and target_pos &lt;= div_pos):&amp;#10;        &amp;#10;        correct = 1&amp;#10;        outcome = 2 if valence == 'rew' else 1&amp;#10;        if outcome == 2:&amp;#10;            coinLR = 1&amp;#10;        elif outcome == 1:&amp;#10;            coinM = 1&amp;#10;            &amp;#10;    else:&amp;#10;        &amp;#10;        correct = 0&amp;#10;        outcome = -1 if valence == 'rew' else -2&amp;#10;        if outcome == -2:&amp;#10;            coinLR, crossLR = 1, 1&amp;#10;        elif outcome == -1:&amp;#10;            coinM, crossM = 1, 1   &amp;#10;    &amp;#10;elif not marker_moved:&amp;#10;    no_resp_txt = 'You must move the marker!'&amp;#10;    &amp;#10;else:&amp;#10;    no_resp_txt = 'Respond faster!'&amp;#10;    " valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="var _pj;&amp;#10;function _pj_snippets(container) {&amp;#10;    function in_es6(left, right) {&amp;#10;        if (((right instanceof Array) || ((typeof right) === &quot;string&quot;))) {&amp;#10;            return (right.indexOf(left) &gt; (- 1));&amp;#10;        } else {&amp;#10;            if (((right instanceof Map) || (right instanceof Set) || (right instanceof WeakMap) || (right instanceof WeakSet))) {&amp;#10;                return right.has(left);&amp;#10;            } else {&amp;#10;                return (left in right);&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;    container[&quot;in_es6&quot;] = in_es6;&amp;#10;    return container;&amp;#10;}&amp;#10;_pj = {};&amp;#10;_pj_snippets(_pj);&amp;#10;if (_pj.in_es6(expInfo[&quot;sess_type&quot;], [&quot;A&quot;, &quot;C&quot;])) {&amp;#10;    valence = subj_C0F1_val;&amp;#10;} else {&amp;#10;    if (_pj.in_es6(expInfo[&quot;sess_type&quot;], [&quot;B&quot;, &quot;D&quot;])) {&amp;#10;        valence = subj_C1F0_val;&amp;#10;    }&amp;#10;}&amp;#10;no_resp_txt = &quot;&quot;;&amp;#10;[coin3, coin1, cross3, cross1] = [0, 0, 0, 0];&amp;#10;[correct, outcome] = [0, 0];&amp;#10;if (((marker_moved &amp;&amp; (! (submit_resp.keys === null))) &amp;&amp; _pj.in_es6(&quot;up&quot;, submit_resp.keys))) {&amp;#10;    if ((((marker.markerPos &gt;= div_pos) &amp;&amp; (target_pos &gt;= div_pos)) || ((marker.markerPos &lt;= div_pos) &amp;&amp; (target_pos &lt;= div_pos)))) {&amp;#10;        correct = 1;&amp;#10;        outcome = ((valence === &quot;rew&quot;) ? 3 : 1);&amp;#10;        if ((outcome === 3)) {&amp;#10;            coin3 = 1;&amp;#10;        } else {&amp;#10;            if ((outcome === 1)) {&amp;#10;                coin1 = 1;&amp;#10;            }&amp;#10;        }&amp;#10;    } else {&amp;#10;        correct = 0;&amp;#10;        outcome = ((valence === &quot;rew&quot;) ? (- 1) : (- 3));&amp;#10;        if ((outcome === (- 3))) {&amp;#10;            cross3 = 1;&amp;#10;        } else {&amp;#10;            if ((outcome === (- 1))) {&amp;#10;                cross1 = 1;&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;} else {&amp;#10;    if ((! marker_moved)) {&amp;#10;        no_resp_txt = &quot;You must move the marker!&quot;;&amp;#10;    } else {&amp;#10;        no_resp_txt = &quot;Respond faster!&quot;;&amp;#10;    }&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="#print('trig70', end=', ')&amp;#10;&amp;#10;# C0F1 = Curve penalty, Flat reward&amp;#10;if expInfo['sess_type'] in ['A','C']:&amp;#10;    valence = subj_C0F1_val&amp;#10;elif expInfo['sess_type'] in ['B','D']:&amp;#10;    valence = subj_C1F0_val&amp;#10;    &amp;#10;no_resp_txt = ''&amp;#10;coin3, coin1, cross3, cross1 = 0, 0, 0, 0&amp;#10;correct, outcome = 0, 0&amp;#10;&amp;#10;if marker_moved and not submit_resp.keys == None and 'up' in submit_resp.keys:&amp;#10;    &amp;#10;    if (marker.markerPos &gt;= div_pos and target_pos &gt;= div_pos)\&amp;#10;    or (marker.markerPos &lt;= div_pos and target_pos &lt;= div_pos):&amp;#10;        &amp;#10;        correct = 1&amp;#10;        outcome = 3 if valence == 'rew' else 1&amp;#10;        if outcome == 3:&amp;#10;            coin3 = 1&amp;#10;        elif outcome == 1:&amp;#10;            coin1 = 1&amp;#10;    &amp;#10;    else:&amp;#10;        &amp;#10;        correct = 0&amp;#10;        outcome = -1 if valence == 'rew' else -3&amp;#10;        if outcome == -3:&amp;#10;            cross3 = 1&amp;#10;        elif outcome == -1:&amp;#10;            cross1 = 1&amp;#10;        &amp;#10;        &amp;#10;elif not marker_moved:&amp;#10;    no_resp_txt = 'You must move the marker!'&amp;#10;    &amp;#10;else:&amp;#10;    no_resp_txt = 'Respond faster!'" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
@@ -557,7 +557,7 @@
         <Param val="" valType="code" updates="None" name="validator"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
       </TextComponent>
-      <ImageComponent name="Lcoin" plugin="None">
+      <ImageComponent name="three_coin" plugin="None">
         <Param val="center" valType="str" updates="constant" name="anchor"/>
         <Param val="$[1,1,1]" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
@@ -567,18 +567,18 @@
         <Param val="1" valType="code" updates="None" name="durationEstim"/>
         <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
         <Param val="False" valType="bool" updates="constant" name="flipVert"/>
-        <Param val="input_data/coin.png" valType="file" updates="set during: delay.ISI2" name="image"/>
+        <Param val="input_data/coin3.png" valType="file" updates="set during: delay.ISI2" name="image"/>
         <Param val="linear" valType="str" updates="constant" name="interpolate"/>
         <Param val="" valType="str" updates="constant" name="mask"/>
-        <Param val="Lcoin" valType="code" updates="None" name="name"/>
+        <Param val="three_coin" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="-.2, 0" valType="list" updates="constant" name="pos"/>
+        <Param val="0, 0" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val=".3,.3" valType="list" updates="constant" name="size"/>
+        <Param val=".97,.3" valType="list" updates="constant" name="size"/>
         <Param val="0" valType="code" updates="None" name="startEstim"/>
         <Param val="condition" valType="str" updates="None" name="startType"/>
-        <Param val="$coinLR" valType="code" updates="None" name="startVal"/>
+        <Param val="$coin3" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="1*expInfo['frameRate']" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
@@ -586,7 +586,7 @@
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
       </ImageComponent>
-      <ImageComponent name="Rcoin" plugin="None">
+      <ImageComponent name="one_coin" plugin="None">
         <Param val="center" valType="str" updates="constant" name="anchor"/>
         <Param val="$[1,1,1]" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
@@ -596,39 +596,10 @@
         <Param val="1" valType="code" updates="None" name="durationEstim"/>
         <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
         <Param val="False" valType="bool" updates="constant" name="flipVert"/>
-        <Param val="input_data/coin.png" valType="file" updates="set during: delay.ISI2" name="image"/>
+        <Param val="input_data/coin1.png" valType="file" updates="set during: delay.ISI2" name="image"/>
         <Param val="linear" valType="str" updates="constant" name="interpolate"/>
         <Param val="" valType="str" updates="constant" name="mask"/>
-        <Param val="Rcoin" valType="code" updates="None" name="name"/>
-        <Param val="" valType="num" updates="constant" name="opacity"/>
-        <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val=".2, 0" valType="list" updates="constant" name="pos"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val=".3,.3" valType="list" updates="constant" name="size"/>
-        <Param val="0" valType="code" updates="None" name="startEstim"/>
-        <Param val="condition" valType="str" updates="None" name="startType"/>
-        <Param val="$coinLR" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="1*expInfo['frameRate']" valType="code" updates="constant" name="stopVal"/>
-        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="128" valType="num" updates="constant" name="texture resolution"/>
-        <Param val="from exp settings" valType="str" updates="None" name="units"/>
-        <Param val="" valType="code" updates="None" name="validator"/>
-      </ImageComponent>
-      <ImageComponent name="Mcoin" plugin="None">
-        <Param val="center" valType="str" updates="constant" name="anchor"/>
-        <Param val="$[1,1,1]" valType="color" updates="constant" name="color"/>
-        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
-        <Param val="1" valType="num" updates="constant" name="contrast"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="False" valType="code" updates="constant" name="draggable"/>
-        <Param val="1" valType="code" updates="None" name="durationEstim"/>
-        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
-        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
-        <Param val="input_data/coin.png" valType="file" updates="set during: delay.ISI2" name="image"/>
-        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
-        <Param val="" valType="str" updates="constant" name="mask"/>
-        <Param val="Mcoin" valType="code" updates="None" name="name"/>
+        <Param val="one_coin" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
@@ -636,7 +607,7 @@
         <Param val=".3,.3" valType="list" updates="constant" name="size"/>
         <Param val="0" valType="code" updates="None" name="startEstim"/>
         <Param val="condition" valType="str" updates="None" name="startType"/>
-        <Param val="$coinM" valType="code" updates="None" name="startVal"/>
+        <Param val="$coin1" valType="code" updates="None" name="startVal"/>
         <Param val="duration (frames)" valType="str" updates="None" name="stopType"/>
         <Param val="1*expInfo['frameRate']" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
@@ -644,7 +615,7 @@
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
       </ImageComponent>
-      <ImageComponent name="Lcross" plugin="None">
+      <ImageComponent name="three_cross" plugin="None">
         <Param val="center" valType="str" updates="constant" name="anchor"/>
         <Param val="$[1,1,1]" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
@@ -654,18 +625,18 @@
         <Param val="1" valType="code" updates="None" name="durationEstim"/>
         <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
         <Param val="False" valType="bool" updates="constant" name="flipVert"/>
-        <Param val="input_data/cross.png" valType="file" updates="set during: delay.ISI2" name="image"/>
+        <Param val="input_data/cross3.png" valType="file" updates="set during: delay.ISI2" name="image"/>
         <Param val="linear" valType="str" updates="constant" name="interpolate"/>
         <Param val="" valType="str" updates="constant" name="mask"/>
-        <Param val="Lcross" valType="code" updates="None" name="name"/>
+        <Param val="three_cross" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="-.2, 0" valType="list" updates="constant" name="pos"/>
+        <Param val="0, 0" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val=".3,.3" valType="list" updates="constant" name="size"/>
+        <Param val=".97,.3" valType="list" updates="constant" name="size"/>
         <Param val="0" valType="code" updates="None" name="startEstim"/>
         <Param val="condition" valType="str" updates="None" name="startType"/>
-        <Param val="crossLR" valType="code" updates="None" name="startVal"/>
+        <Param val="$cross3" valType="code" updates="None" name="startVal"/>
         <Param val="frame N" valType="str" updates="None" name="stopType"/>
         <Param val="1*expInfo['frameRate']" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
@@ -673,7 +644,7 @@
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
       </ImageComponent>
-      <ImageComponent name="Rcross" plugin="None">
+      <ImageComponent name="one_cross" plugin="None">
         <Param val="center" valType="str" updates="constant" name="anchor"/>
         <Param val="$[1,1,1]" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
@@ -683,39 +654,10 @@
         <Param val="1" valType="code" updates="None" name="durationEstim"/>
         <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
         <Param val="False" valType="bool" updates="constant" name="flipVert"/>
-        <Param val="input_data/cross.png" valType="file" updates="set during: delay.ISI2" name="image"/>
+        <Param val="input_data/cross1.png" valType="file" updates="set during: delay.ISI2" name="image"/>
         <Param val="linear" valType="str" updates="constant" name="interpolate"/>
         <Param val="" valType="str" updates="constant" name="mask"/>
-        <Param val="Rcross" valType="code" updates="None" name="name"/>
-        <Param val="" valType="num" updates="constant" name="opacity"/>
-        <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val=".2, 0" valType="list" updates="constant" name="pos"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val=".3,.3" valType="list" updates="constant" name="size"/>
-        <Param val="0" valType="code" updates="None" name="startEstim"/>
-        <Param val="condition" valType="str" updates="None" name="startType"/>
-        <Param val="crossLR" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (frames)" valType="str" updates="None" name="stopType"/>
-        <Param val="1*expInfo['frameRate']" valType="code" updates="constant" name="stopVal"/>
-        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="128" valType="num" updates="constant" name="texture resolution"/>
-        <Param val="from exp settings" valType="str" updates="None" name="units"/>
-        <Param val="" valType="code" updates="None" name="validator"/>
-      </ImageComponent>
-      <ImageComponent name="Mcross" plugin="None">
-        <Param val="center" valType="str" updates="constant" name="anchor"/>
-        <Param val="$[1,1,1]" valType="color" updates="constant" name="color"/>
-        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
-        <Param val="1" valType="num" updates="constant" name="contrast"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="False" valType="code" updates="constant" name="draggable"/>
-        <Param val="1" valType="code" updates="None" name="durationEstim"/>
-        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
-        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
-        <Param val="input_data/cross.png" valType="file" updates="set during: delay.ISI2" name="image"/>
-        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
-        <Param val="" valType="str" updates="constant" name="mask"/>
-        <Param val="Mcross" valType="code" updates="None" name="name"/>
+        <Param val="one_cross" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
@@ -723,7 +665,7 @@
         <Param val=".3,.3" valType="list" updates="constant" name="size"/>
         <Param val="0" valType="code" updates="None" name="startEstim"/>
         <Param val="condition" valType="str" updates="None" name="startType"/>
-        <Param val="$crossM" valType="code" updates="None" name="startVal"/>
+        <Param val="$cross1" valType="code" updates="None" name="startVal"/>
         <Param val="duration (frames)" valType="str" updates="None" name="stopType"/>
         <Param val="1*expInfo['frameRate']" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
@@ -1050,8 +992,8 @@
     <Routine name="begin_expt"/>
     <LoopInitiator loopType="TrialHandler" name="trials">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
-      <Param name="conditions" updates="None" val="[OrderedDict([('blockN', 1), ('run', 1), ('condition', 'baseline'), ('trial_key', 5), ('stim_file_pos', 0.5), ('stim_pos', -0.3), ('noise_pos', 1), ('marker_init', -0.267978559), ('shape', 'curv'), ('shape_order', 'flat_curv'), ('div_pos', 0.0), ('target_pos', 0.3), ('subj_C0F1_val', 'pen'), ('subj_C1F0_val', 'rew'), ('target_file', 'input_data/stims/Shape_0.50_1.00.png'), ('img1_file', 'input_data/stims/Shape_4.00_2.00.png'), ('img2_file', 'input_data/stims/Shape_0.00_2.00.png')]), OrderedDict([('blockN', 1), ('run', 1), ('condition', 'baseline'), ('trial_key', 14), ('stim_file_pos', 1.5), ('stim_pos', -0.1), ('noise_pos', 1), ('marker_init', 0.095758636), ('shape', 'curv'), ('shape_order', 'curv_flat'), ('div_pos', 0.0), ('target_pos', -0.1), ('subj_C0F1_val', 'pen'), ('subj_C1F0_val', 'rew'), ('target_file', 'input_data/stims/Shape_1.50_1.00.png'), ('img1_file', 'input_data/stims/Shape_0.00_2.00.png'), ('img2_file', 'input_data/stims/Shape_4.00_2.00.png')]), OrderedDict([('blockN', 1), ('run', 1), ('condition', 'baseline'), ('trial_key', 24), ('stim_file_pos', 2.5), ('stim_pos', 0.1), ('noise_pos', 3), ('marker_init', -0.275236376), ('shape', 'flat'), ('shape_order', 'curv_flat'), ('div_pos', 0.0), ('target_pos', 0.1), ('subj_C0F1_val', 'rew'), ('subj_C1F0_val', 'pen'), ('target_file', 'input_data/stims/Shape_2.50_3.00.png'), ('img1_file', 'input_data/stims/Shape_0.00_2.00.png'), ('img2_file', 'input_data/stims/Shape_4.00_2.00.png')]), OrderedDict([('blockN', 1), ('run', 1), ('condition', 'baseline'), ('trial_key', 35), ('stim_file_pos', 3.5), ('stim_pos', 0.3), ('noise_pos', 3), ('marker_init', 0.06241143), ('shape', 'flat'), ('shape_order', 'flat_curv'), ('div_pos', 0.0), ('target_pos', -0.3), ('subj_C0F1_val', 'rew'), ('subj_C1F0_val', 'pen'), ('target_file', 'input_data/stims/Shape_3.50_3.00.png'), ('img1_file', 'input_data/stims/Shape_4.00_2.00.png'), ('img2_file', 'input_data/stims/Shape_0.00_2.00.png')]), OrderedDict([('blockN', 2), ('run', 1), ('condition', 'pen_comp'), ('trial_key', 58), ('stim_file_pos', 0.9), ('stim_pos', -0.22), ('noise_pos', 1), ('marker_init', -0.044781905), ('shape', 'curv'), ('shape_order', 'curv_flat'), ('div_pos', -0.2), ('target_pos', -0.22), ('subj_C0F1_val', 'pen'), ('subj_C1F0_val', 'rew'), ('target_file', 'input_data/stims/Shape_0.90_1.00.png'), ('img1_file', 'input_data/stims/Shape_0.00_2.00.png'), ('img2_file', 'input_data/stims/Shape_4.00_2.00.png')]), OrderedDict([('blockN', 2), ('run', 1), ('condition', 'pen_comp'), ('trial_key', 59), ('stim_file_pos', 0.9), ('stim_pos', -0.22), ('noise_pos', 1), ('marker_init', 0.354011242), ('shape', 'curv'), ('shape_order', 'flat_curv'), ('div_pos', 0.2), ('target_pos', 0.22), ('subj_C0F1_val', 'pen'), ('subj_C1F0_val', 'rew'), ('target_file', 'input_data/stims/Shape_0.90_1.00.png'), ('img1_file', 'input_data/stims/Shape_4.00_2.00.png'), ('img2_file', 'input_data/stims/Shape_0.00_2.00.png')]), OrderedDict([('blockN', 2), ('run', 1), ('condition', 'pen_comp'), ('trial_key', 60), ('stim_file_pos', 1.1), ('stim_pos', -0.18), ('noise_pos', 3), ('marker_init', -0.282459925), ('shape', 'flat'), ('shape_order', 'curv_flat'), ('div_pos', -0.2), ('target_pos', -0.18), ('subj_C0F1_val', 'rew'), ('subj_C1F0_val', 'pen'), ('target_file', 'input_data/stims/Shape_1.10_3.00.png'), ('img1_file', 'input_data/stims/Shape_0.00_2.00.png'), ('img2_file', 'input_data/stims/Shape_4.00_2.00.png')]), OrderedDict([('blockN', 2), ('run', 1), ('condition', 'pen_comp'), ('trial_key', 78), ('stim_file_pos', 2.9), ('stim_pos', 0.18), ('noise_pos', 3), ('marker_init', -0.059175878), ('shape', 'flat'), ('shape_order', 'curv_flat'), ('div_pos', -0.2), ('target_pos', 0.18), ('subj_C0F1_val', 'rew'), ('subj_C1F0_val', 'pen'), ('target_file', 'input_data/stims/Shape_2.90_3.00.png'), ('img1_file', 'input_data/stims/Shape_0.00_2.00.png'), ('img2_file', 'input_data/stims/Shape_4.00_2.00.png')]), OrderedDict([('blockN', 3), ('run', 1), ('condition', 'rew_comp'), ('trial_key', 81), ('stim_file_pos', 1.1), ('stim_pos', -0.18), ('noise_pos', 1), ('marker_init', -0.294037542), ('shape', 'curv'), ('shape_order', 'flat_curv'), ('div_pos', -0.2), ('target_pos', 0.18), ('subj_C0F1_val', 'pen'), ('subj_C1F0_val', 'rew'), ('target_file', 'input_data/stims/Shape_1.10_1.00.png'), ('img1_file', 'input_data/stims/Shape_4.00_2.00.png'), ('img2_file', 'input_data/stims/Shape_0.00_2.00.png')]), OrderedDict([('blockN', 3), ('run', 1), ('condition', 'rew_comp'), ('trial_key', 99), ('stim_file_pos', 2.9), ('stim_pos', 0.18), ('noise_pos', 1), ('marker_init', 0.27500893), ('shape', 'curv'), ('shape_order', 'flat_curv'), ('div_pos', -0.2), ('target_pos', -0.18), ('subj_C0F1_val', 'pen'), ('subj_C1F0_val', 'rew'), ('target_file', 'input_data/stims/Shape_2.90_1.00.png'), ('img1_file', 'input_data/stims/Shape_4.00_2.00.png'), ('img2_file', 'input_data/stims/Shape_0.00_2.00.png')]), OrderedDict([('blockN', 3), ('run', 1), ('condition', 'rew_comp'), ('trial_key', 100), ('stim_file_pos', 3.1), ('stim_pos', 0.22), ('noise_pos', 3), ('marker_init', -0.201811964), ('shape', 'flat'), ('shape_order', 'curv_flat'), ('div_pos', 0.2), ('target_pos', 0.22), ('subj_C0F1_val', 'rew'), ('subj_C1F0_val', 'pen'), ('target_file', 'input_data/stims/Shape_3.10_3.00.png'), ('img1_file', 'input_data/stims/Shape_0.00_2.00.png'), ('img2_file', 'input_data/stims/Shape_4.00_2.00.png')]), OrderedDict([('blockN', 3), ('run', 1), ('condition', 'rew_comp'), ('trial_key', 101), ('stim_file_pos', 3.1), ('stim_pos', 0.22), ('noise_pos', 3), ('marker_init', -0.265726132), ('shape', 'flat'), ('shape_order', 'flat_curv'), ('div_pos', -0.2), ('target_pos', -0.22), ('subj_C0F1_val', 'rew'), ('subj_C1F0_val', 'pen'), ('target_file', 'input_data/stims/Shape_3.10_3.00.png'), ('img1_file', 'input_data/stims/Shape_4.00_2.00.png'), ('img2_file', 'input_data/stims/Shape_0.00_2.00.png')])]" valType="str"/>
-      <Param name="conditionsFile" updates="None" val="input_data/practice.csv" valType="file"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('blockN', 1), ('run', 1), ('condition', 'baseline'), ('trial_key', 0), ('stim_file_pos', 0.1), ('stim_pos', -0.38), ('noise_pos', 0.0), ('marker_init', -0.328), ('shape', 'curv'), ('shape_order', 'curv_flat'), ('div_pos', 0.0), ('target_pos', -0.38), ('subj_C0F1_val', 'pen'), ('subj_C1F0_val', 'rew'), ('target_file', 'input_data/stims/Shape_0.10_0.00.png'), ('img1_file', 'input_data/stims/Shape_0.00_0.00.png'), ('img2_file', 'input_data/stims/Shape_4.00_0.00.png')]), OrderedDict([('blockN', 1), ('run', 1), ('condition', 'baseline'), ('trial_key', 6), ('stim_file_pos', 0.7), ('stim_pos', -0.26), ('noise_pos', 0.0), ('marker_init', 0.072), ('shape', 'curv'), ('shape_order', 'curv_flat'), ('div_pos', 0.0), ('target_pos', -0.26), ('subj_C0F1_val', 'pen'), ('subj_C1F0_val', 'rew'), ('target_file', 'input_data/stims/Shape_0.70_0.00.png'), ('img1_file', 'input_data/stims/Shape_0.00_0.00.png'), ('img2_file', 'input_data/stims/Shape_4.00_0.00.png')]), OrderedDict([('blockN', 1), ('run', 1), ('condition', 'baseline'), ('trial_key', 12), ('stim_file_pos', 1.3), ('stim_pos', -0.14), ('noise_pos', 0.0), ('marker_init', -0.384), ('shape', 'curv'), ('shape_order', 'curv_flat'), ('div_pos', 0.0), ('target_pos', -0.14), ('subj_C0F1_val', 'pen'), ('subj_C1F0_val', 'rew'), ('target_file', 'input_data/stims/Shape_1.30_0.00.png'), ('img1_file', 'input_data/stims/Shape_0.00_0.00.png'), ('img2_file', 'input_data/stims/Shape_4.00_0.00.png')]), OrderedDict([('blockN', 1), ('run', 1), ('condition', 'baseline'), ('trial_key', 18), ('stim_file_pos', 1.9), ('stim_pos', -0.02), ('noise_pos', 0.0), ('marker_init', 0.268), ('shape', 'curv'), ('shape_order', 'curv_flat'), ('div_pos', 0.0), ('target_pos', -0.02), ('subj_C0F1_val', 'pen'), ('subj_C1F0_val', 'rew'), ('target_file', 'input_data/stims/Shape_1.90_0.00.png'), ('img1_file', 'input_data/stims/Shape_0.00_0.00.png'), ('img2_file', 'input_data/stims/Shape_4.00_0.00.png')]), OrderedDict([('blockN', 1), ('run', 1), ('condition', 'baseline'), ('trial_key', 24), ('stim_file_pos', 2.5), ('stim_pos', 0.1), ('noise_pos', 2.0), ('marker_init', -0.04), ('shape', 'flat'), ('shape_order', 'curv_flat'), ('div_pos', 0.0), ('target_pos', 0.1), ('subj_C0F1_val', 'rew'), ('subj_C1F0_val', 'pen'), ('target_file', 'input_data/stims/Shape_2.50_2.00.png'), ('img1_file', 'input_data/stims/Shape_0.00_0.00.png'), ('img2_file', 'input_data/stims/Shape_4.00_0.00.png')]), OrderedDict([('blockN', 1), ('run', 1), ('condition', 'baseline'), ('trial_key', 30), ('stim_file_pos', 3.1), ('stim_pos', 0.22), ('noise_pos', 2.0), ('marker_init', 0.344), ('shape', 'flat'), ('shape_order', 'curv_flat'), ('div_pos', 0.0), ('target_pos', 0.22), ('subj_C0F1_val', 'rew'), ('subj_C1F0_val', 'pen'), ('target_file', 'input_data/stims/Shape_3.10_2.00.png'), ('img1_file', 'input_data/stims/Shape_0.00_0.00.png'), ('img2_file', 'input_data/stims/Shape_4.00_0.00.png')]), OrderedDict([('blockN', 1), ('run', 1), ('condition', 'baseline'), ('trial_key', 36), ('stim_file_pos', 3.7), ('stim_pos', 0.34), ('noise_pos', 2.0), ('marker_init', -0.252), ('shape', 'flat'), ('shape_order', 'curv_flat'), ('div_pos', 0.0), ('target_pos', 0.34), ('subj_C0F1_val', 'rew'), ('subj_C1F0_val', 'pen'), ('target_file', 'input_data/stims/Shape_3.70_2.00.png'), ('img1_file', 'input_data/stims/Shape_0.00_0.00.png'), ('img2_file', 'input_data/stims/Shape_4.00_0.00.png')]), OrderedDict([('blockN', 2), ('run', 1), ('condition', 'pen_comp'), ('trial_key', 42), ('stim_file_pos', 0.1), ('stim_pos', -0.38), ('noise_pos', 0.0), ('marker_init', -0.132), ('shape', 'curv'), ('shape_order', 'curv_flat'), ('div_pos', -0.2), ('target_pos', -0.38), ('subj_C0F1_val', 'pen'), ('subj_C1F0_val', 'rew'), ('target_file', 'input_data/stims/Shape_0.10_0.00.png'), ('img1_file', 'input_data/stims/Shape_0.00_0.00.png'), ('img2_file', 'input_data/stims/Shape_4.00_0.00.png')]), OrderedDict([('blockN', 2), ('run', 1), ('condition', 'pen_comp'), ('trial_key', 48), ('stim_file_pos', 0.5), ('stim_pos', -0.3), ('noise_pos', 0.0), ('marker_init', -0.36), ('shape', 'curv'), ('shape_order', 'curv_flat'), ('div_pos', -0.2), ('target_pos', -0.3), ('subj_C0F1_val', 'pen'), ('subj_C1F0_val', 'rew'), ('target_file', 'input_data/stims/Shape_0.50_0.00.png'), ('img1_file', 'input_data/stims/Shape_0.00_0.00.png'), ('img2_file', 'input_data/stims/Shape_4.00_0.00.png')]), OrderedDict([('blockN', 2), ('run', 1), ('condition', 'pen_comp'), ('trial_key', 54), ('stim_file_pos', 0.7), ('stim_pos', -0.26), ('noise_pos', 0.0), ('marker_init', 0.136), ('shape', 'curv'), ('shape_order', 'curv_flat'), ('div_pos', -0.2), ('target_pos', -0.26), ('subj_C0F1_val', 'pen'), ('subj_C1F0_val', 'rew'), ('target_file', 'input_data/stims/Shape_0.70_0.00.png'), ('img1_file', 'input_data/stims/Shape_0.00_0.00.png'), ('img2_file', 'input_data/stims/Shape_4.00_0.00.png')]), OrderedDict([('blockN', 2), ('run', 1), ('condition', 'pen_comp'), ('trial_key', 60), ('stim_file_pos', 1.1), ('stim_pos', -0.18), ('noise_pos', 2.0), ('marker_init', -0.284), ('shape', 'flat'), ('shape_order', 'curv_flat'), ('div_pos', -0.2), ('target_pos', -0.18), ('subj_C0F1_val', 'rew'), ('subj_C1F0_val', 'pen'), ('target_file', 'input_data/stims/Shape_1.10_2.00.png'), ('img1_file', 'input_data/stims/Shape_0.00_0.00.png'), ('img2_file', 'input_data/stims/Shape_4.00_0.00.png')]), OrderedDict([('blockN', 2), ('run', 1), ('condition', 'pen_comp'), ('trial_key', 66), ('stim_file_pos', 1.7), ('stim_pos', -0.06), ('noise_pos', 2.0), ('marker_init', 0.332), ('shape', 'flat'), ('shape_order', 'curv_flat'), ('div_pos', -0.2), ('target_pos', -0.06), ('subj_C0F1_val', 'rew'), ('subj_C1F0_val', 'pen'), ('target_file', 'input_data/stims/Shape_1.70_2.00.png'), ('img1_file', 'input_data/stims/Shape_0.00_0.00.png'), ('img2_file', 'input_data/stims/Shape_4.00_0.00.png')]), OrderedDict([('blockN', 2), ('run', 1), ('condition', 'pen_comp'), ('trial_key', 72), ('stim_file_pos', 2.3), ('stim_pos', 0.06), ('noise_pos', 2.0), ('marker_init', -0.392), ('shape', 'flat'), ('shape_order', 'curv_flat'), ('div_pos', -0.2), ('target_pos', 0.06), ('subj_C0F1_val', 'rew'), ('subj_C1F0_val', 'pen'), ('target_file', 'input_data/stims/Shape_2.30_2.00.png'), ('img1_file', 'input_data/stims/Shape_0.00_0.00.png'), ('img2_file', 'input_data/stims/Shape_4.00_0.00.png')]), OrderedDict([('blockN', 2), ('run', 1), ('condition', 'pen_comp'), ('trial_key', 78), ('stim_file_pos', 2.9), ('stim_pos', 0.18), ('noise_pos', 2.0), ('marker_init', 0.12), ('shape', 'flat'), ('shape_order', 'curv_flat'), ('div_pos', -0.2), ('target_pos', 0.18), ('subj_C0F1_val', 'rew'), ('subj_C1F0_val', 'pen'), ('target_file', 'input_data/stims/Shape_2.90_2.00.png'), ('img1_file', 'input_data/stims/Shape_0.00_0.00.png'), ('img2_file', 'input_data/stims/Shape_4.00_0.00.png')]), OrderedDict([('blockN', 3), ('run', 1), ('condition', 'rew_comp'), ('trial_key', 84), ('stim_file_pos', 1.5), ('stim_pos', -0.1), ('noise_pos', 0.0), ('marker_init', 0.012), ('shape', 'curv'), ('shape_order', 'curv_flat'), ('div_pos', 0.2), ('target_pos', -0.1), ('subj_C0F1_val', 'pen'), ('subj_C1F0_val', 'rew'), ('target_file', 'input_data/stims/Shape_1.50_0.00.png'), ('img1_file', 'input_data/stims/Shape_0.00_0.00.png'), ('img2_file', 'input_data/stims/Shape_4.00_0.00.png')]), OrderedDict([('blockN', 3), ('run', 1), ('condition', 'rew_comp'), ('trial_key', 90), ('stim_file_pos', 2.1), ('stim_pos', 0.02), ('noise_pos', 0.0), ('marker_init', 0.264), ('shape', 'curv'), ('shape_order', 'curv_flat'), ('div_pos', 0.2), ('target_pos', 0.02), ('subj_C0F1_val', 'pen'), ('subj_C1F0_val', 'rew'), ('target_file', 'input_data/stims/Shape_2.10_0.00.png'), ('img1_file', 'input_data/stims/Shape_0.00_0.00.png'), ('img2_file', 'input_data/stims/Shape_4.00_0.00.png')]), OrderedDict([('blockN', 3), ('run', 1), ('condition', 'rew_comp'), ('trial_key', 96), ('stim_file_pos', 2.7), ('stim_pos', 0.14), ('noise_pos', 0.0), ('marker_init', -0.332), ('shape', 'curv'), ('shape_order', 'curv_flat'), ('div_pos', 0.2), ('target_pos', 0.14), ('subj_C0F1_val', 'pen'), ('subj_C1F0_val', 'rew'), ('target_file', 'input_data/stims/Shape_2.70_0.00.png'), ('img1_file', 'input_data/stims/Shape_0.00_0.00.png'), ('img2_file', 'input_data/stims/Shape_4.00_0.00.png')]), OrderedDict([('blockN', 3), ('run', 1), ('condition', 'rew_comp'), ('trial_key', 102), ('stim_file_pos', 3.1), ('stim_pos', 0.22), ('noise_pos', 2.0), ('marker_init', 0.356), ('shape', 'flat'), ('shape_order', 'curv_flat'), ('div_pos', 0.2), ('target_pos', 0.22), ('subj_C0F1_val', 'rew'), ('subj_C1F0_val', 'pen'), ('target_file', 'input_data/stims/Shape_3.10_2.00.png'), ('img1_file', 'input_data/stims/Shape_0.00_0.00.png'), ('img2_file', 'input_data/stims/Shape_4.00_0.00.png')]), OrderedDict([('blockN', 3), ('run', 1), ('condition', 'rew_comp'), ('trial_key', 108), ('stim_file_pos', 3.5), ('stim_pos', 0.3), ('noise_pos', 2.0), ('marker_init', 0.16), ('shape', 'flat'), ('shape_order', 'curv_flat'), ('div_pos', 0.2), ('target_pos', 0.3), ('subj_C0F1_val', 'rew'), ('subj_C1F0_val', 'pen'), ('target_file', 'input_data/stims/Shape_3.50_2.00.png'), ('img1_file', 'input_data/stims/Shape_0.00_0.00.png'), ('img2_file', 'input_data/stims/Shape_4.00_0.00.png')]), OrderedDict([('blockN', 3), ('run', 1), ('condition', 'rew_comp'), ('trial_key', 114), ('stim_file_pos', 3.7), ('stim_pos', 0.34), ('noise_pos', 2.0), ('marker_init', 0.212), ('shape', 'flat'), ('shape_order', 'curv_flat'), ('div_pos', 0.2), ('target_pos', 0.34), ('subj_C0F1_val', 'rew'), ('subj_C1F0_val', 'pen'), ('target_file', 'input_data/stims/Shape_3.70_2.00.png'), ('img1_file', 'input_data/stims/Shape_0.00_0.00.png'), ('img2_file', 'input_data/stims/Shape_4.00_0.00.png')])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="input_data/trials_practice.csv" valType="file"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="random" valType="str"/>
