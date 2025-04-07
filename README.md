@@ -1,2 +1,1 @@
-# valence_task
-Investigating valence asymmetries in sensory classification 
+Please check valence_README.docx
