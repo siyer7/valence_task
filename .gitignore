@@ -1,1 +1,3 @@
 results/*.psydat
+.Rhistory
+.DS_Store
